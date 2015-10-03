@@ -1,25 +1,25 @@
 # Ember-deploy-tagging-scalingo
 
-This README outlines the details of collaborating on this Ember addon.
+This [ember-cli-deploy](https://github.com/ember-cli/ember-cli-deploy) tagging-adapter will use the environment variable `DEPLOY_GIT_REF` to tag a deployment instead of the default sha tagging-adapter.
 
-## Installation
+## How to use
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+1. `npm install --save ember-deploy-tagging-scalingo`
 
-## Running
+2. Add `tagging: 'env-scalingo'` to your `deploy.js`:
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```
+module.exports = {
+  production: {
+    store: process.env['REDIS_URL'],
+    assets: {
+      ...
+    },
+    tagging: 'env-scalingo'
+  }
+};
 
-## Running Tests
+```
 
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+## Links
+* [ember-cli-deploy doc](http://ember-cli.github.io/ember-cli-deploy/)

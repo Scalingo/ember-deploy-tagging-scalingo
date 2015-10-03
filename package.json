@@ -1,21 +1,12 @@
 {
   "name": "ember-deploy-tagging-scalingo",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
-  "directories": {
-    "doc": "doc",
-    "test": "tests"
-  },
-  "scripts": {
-    "build": "ember build",
-    "start": "ember server",
-    "test": "ember try:testall"
-  },
-  "repository": "",
+  "version": "0.0.3",
+  "description": "An ember-cli-deploy tagging-adapter using DEPLOY_GIT_REF env var as tag.",
+  "repository": "Scalingo/ember-deploy-tagging-scalingo",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "William Hollacsek <william.hollacsek@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
@@ -41,9 +32,15 @@
     "ember-addon"
   ],
   "dependencies": {
+    "core-object": "^1.1.0",
     "ember-cli-babel": "^5.1.3"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Scalingo/ember-deploy-tagging-scalingo/issues"
+  },
+  "homepage": "https://github.com/Scalingo/ember-deploy-tagging-scalingo",
+  "main": "index.js"
 }
