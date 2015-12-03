@@ -1,4 +1,5 @@
-# Ember-deploy-tagging-scalingo
+# Ember-deploy-tagging-scalingo [![](https://ember-cli-deploy.github.io/ember-cli-deploy-version-badges/plugins/ember-deploy-tagging-scalingo.svg)](http://ember-cli-deploy.github.io/ember-cli-deploy-version-badges/)
+
 
 This [ember-cli-deploy](https://github.com/ember-cli/ember-cli-deploy) tagging-adapter will use the environment variable `DEPLOY_GIT_REF` to tag a deployment instead of the default sha tagging-adapter.
 
